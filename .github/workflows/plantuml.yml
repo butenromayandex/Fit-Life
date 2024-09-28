@@ -11,7 +11,6 @@ on:
 jobs:
   generate-diagrams:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -20,6 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'temurin'
 
       - name: Install PlantUML
         run: sudo apt-get install plantuml
