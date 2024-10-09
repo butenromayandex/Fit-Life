@@ -1,9 +1,10 @@
+```puml
 @startuml
 title FitLife Membership Management Code Diagram
 
 top to bottom direction
 
-!includeurl https://raw.githubusercontent.com/butenromayandex/C4/main/C4_Component.puml
+!includeurl https://raw.githubusercontent.com/butenromayandex/Fit-Life/main/diagrams/c4/C4_Component.puml
 
 class User {
   +String name
@@ -32,3 +33,4 @@ User "1" -- "0..*" Membership : has
 Membership "1" -- "0..*" Schedule : includes
 
 @enduml
+``` 

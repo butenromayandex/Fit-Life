@@ -1,9 +1,10 @@
+```puml
 @startuml
 title FitLife Web Application Диаграмма компонента
 
 top to bottom direction
 
-!includeurl https://raw.githubusercontent.com/butenromayandex/C4/main/C4_Component.puml
+!includeurl https://raw.githubusercontent.com/butenromayandex/Fit-Life/main/diagrams/c4/C4_Component.puml
 
 Container_Boundary(FitLifeSystem, "FitLife System") {
   Container(WebApp, "Web Application", "Java, Spring", "Handles user interactions")
@@ -26,3 +27,4 @@ Rel(PaymentController,ServiceLayer,"Calls business logic")
 Rel(ServiceLayer,RepositoryLayer,"Reads/Writes data")
 Rel(RepositoryLayer,Database,"Reads/Writes user data")
 @enduml
+```

@@ -1,10 +1,11 @@
+```puml
 @startuml
 
 title FitLife Context Diagram
 
 top to bottom direction
 
-!includeurl https://raw.githubusercontent.com/butenromayandex/C4/main/C4_Component.puml
+!includeurl https://raw.githubusercontent.com/butenromayandex/Fit-Life/main/diagrams/c4/C4_Component.puml
 
 Person(user, "User", "A user of the fitness club system")
 Person(admin, "Administrator", "An administrator managing the system")
@@ -19,3 +20,4 @@ Rel(FitLifeSystem,api, "Fetches fitness data")
 Rel(FitLifeSystem,bank, "Processes payments")
 
 @enduml
+```
